@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login VisionScan AI</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <img src="logo.jpeg" alt="VisionMate Logo" class="logo">
+        <div class="welcome-text"><h4>Welcome to VisionScan AI</h4></div>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+" title="Name should only contain letters and spaces">
+            </div>
+            <div class="form-group">
+                <label for="number">Mobile Number</label>
+                <input type="tel" id="number" name="number" required pattern="[0-9]{10}" title="Mobile number should be exactly 10 digits">
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <video id="video" width="320" height="240" autoplay style="display:none;"></video> <!-- Video element for camera -->
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
